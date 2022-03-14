@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <ul class="tabs">
+        <li class="active">
+            <h3>
+                <a
+                    id="responsive"
+                    href="javascript: document.querySelector('.tabs .active').classList.remove('active'); document.querySelector('#responsive').parentElement.parentElement.classList.add('active');"
+                >
+                    GPA
+                </a>
+            </h3>
+            <div>
+                <table>
+                    <tr>
+                        <td>Grade:</td>
+                        <td>
+                            <select name="grade" id="grade">
+                                <option value="S">S</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Credits:</td>
+                        <td>
+                            <select name="credits" id="credits">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><input type="button" id="add" value="Add" onclick="Javascript:addRow()"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+
+                <table id="myTableData" cellpadding="2" class="styled-table">
+                    <tr>
+                        <td><b>Subject</b></td>
+                        <td><b>Credits</b></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+
+
+                <h2 id="heading1"> </h2>
+                
+            </div>
+
+            
+        </li>
+        <!-- CGPA -->
+        <li>
+            <h3>
+            <a
+                id="accessible"
+                href="javascript: document.querySelector('.tabs .active').classList.remove('active'); document.querySelector('#accessible').parentElement.parentElement.classList.add('active');"
+                >CGPA</a
+            >
+            </h3>
+            <div>
+                <table>
+                    <tr>
+                        <td>Credits Taken:</td>
+                        <td>
+                            <input type="number" name="credits_taken" id="credits_taken" step="1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GPA:</td>
+                        <td>
+                            <input type="number" name="sem_gpa" id="sem_gpa" step="0.01">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><input type="button" id="add" value="Add" onclick="Javascript:addRow1()"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+
+                <table id="myTableData2" cellpadding="2" class="styled-table">
+                    <tr>
+                        <td><b>Credits</b></td>
+                        <td><b>GPA</b></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+
+
+                <h2 id="heading2"> </h2>
+                
+            </div>
+        </li>
+    </ul>
+  </body>
+</html>

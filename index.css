@@ -1,0 +1,172 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.tabs {
+  margin: auto;
+  padding: 0;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.15);
+  max-width: 50rem;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.tabs li {
+  list-style: none;
+}
+.tabs li > div {
+  padding: 0 1.5rem;
+  color: rgb(31, 20, 26);
+}
+.tabs li > h3 {
+  font-size: 1rem;
+  margin: 2rem 0 0.75rem;
+  padding: 0 1.5rem;
+  position: relative;
+}
+.tabs li > h3 a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  cursor: text;
+}
+.tabs li p {
+  margin: 0 0 2rem;
+}
+.tabs li.active > h3 {
+  color: rgb(31, 20, 26);
+}
+
+input, option, select {
+  width: 150px;
+  background: #efefef;
+  border-radius: 7px;
+  border: none;
+  color: #9a9a9a;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
+@media (min-width: 576px) {
+  .tabs {
+    padding-top: 4rem;
+  }
+  .tabs li > div {
+    display: none;
+    padding-top: 0.75rem;
+    min-height: 8rem;
+  }
+  .tabs li.active > div {
+    display: block;
+  }
+  .tabs li > h3 {
+    position: absolute;
+    top: 0rem;
+    text-align: center;
+    margin: 0;
+    color: rgb(107, 97, 102);
+    padding: 0;
+    border: 0;
+  }
+  .tabs li > h3 a {
+    padding: 1rem 0 1rem;
+    width: 9.3rem;
+    outline-color: rgb(255, 20, 146);
+    cursor: pointer;
+  }
+  .tabs li > h3 a:hover,
+  .tabs li > h3 a:focus {
+    background: #fff3f9;
+  }
+  .tabs li.active > h3 {
+    border-bottom: 2px solid #ff1492;
+  }
+  .tabs li:nth-child(2) > h3 {
+    margin-left: 9.3rem;
+  }
+  .tabs li:nth-child(3) > h3 {
+    margin-left: 18.6rem;
+  }
+}
+
+.label1{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #ff1492;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
